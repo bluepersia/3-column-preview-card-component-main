@@ -1,0 +1,29 @@
+:root {
+    --c-1: hsl(31, 77%, 52%);
+    --c-2: hsl(184, 100%, 22%);
+    --c-3: hsl(179, 100%, 13%);
+
+    --n-1: hsla(0, 0%, 100%, 0.75);
+    --n-2: hsl(0, 0%, 95%);
+
+    --font-1: 'Lexend Deca', sans-serif;
+    --font-2: 'Big Shoulders Display', cursive;
+}
+
+
+html {
+    font-size: 93.75%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-1);
+}
