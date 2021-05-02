@@ -26,4 +26,96 @@ html {
 
 body {
     font-family: var(--font-1);
+    color: var(--n-1);
+    background: var(--n-2);
+    padding: 7em 0;
+}
+
+
+.body__card{
+    width: 87.2%;
+    margin: 0 auto;
+
+}
+
+
+.card {
+    border-radius: 0.7em;
+    max-width: 920px;
+    overflow: hidden;
+}
+
+
+.card__col {
+    padding: 2.5em;
+}
+
+.card__col-1 {
+    background: var(--c-1);
+}
+.card__col-1 .card__btn {
+    color: var(--c-1);
+}
+
+.card__col-2 {
+    background: var(--c-2);
+}
+
+.card__col-2 .card__btn {
+    color: var(--c-2);
+}
+
+.card__col-3 {
+    background: var(--c-3);
+}
+
+.card__col-3 .card__btn {
+    color: var(--c-3);
+}
+
+
+
+
+.card__title {
+    font-family: var(--font-2);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 0.8em 0;
+    color:var(--n-2);
+}
+
+.card__description {
+
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+.card__btn {
+    background: var(--n-2);
+    font-family: inherit;
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-size: inherit;
+    color:transparent;
+    border: 0;
+}
+
+
+@media (min-width: 768px)
+{
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, calc(100% / 3));
+    }
+
+    .card__description {
+        margin-bottom: 5em;
+    }
 }
