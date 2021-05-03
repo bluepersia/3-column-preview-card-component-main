@@ -91,13 +91,20 @@ body {
 }
 
 .card__btn {
-    background: var(--n-2);
+    background-color: var(--n-2);
     font-family: inherit;
-    padding: 1em 2em;
+    padding: 0.9em 1.8em;
     border-radius: 2em;
     font-size: inherit;
     color:transparent;
-    border: 0;
+    border: solid 2px var(--n-2);
+    transition: border 500ms, background-color 500ms;
+}
+
+
+.card__btn:hover, .card__btn:focus {
+    background-color: transparent;
+    color: var(--n-2);
 }
 
 
